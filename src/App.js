@@ -1,10 +1,10 @@
-import Title from "./components/Title";
 import { useState } from "react";
+import Title from "./components/Title";
 
 const App = () => {
   const [isOpenedTitle, setOpened] = useState(false);
 
-  const appearanceTitle = () => {
+  const showTitle = () => {
     setOpened(true);
   };
 
@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div>
-      <button onClick={appearanceTitle}>Open title</button>
+      <button onClick={showTitle}>Open title</button>
     </div>
   )
 };
